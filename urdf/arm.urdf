@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 
-<robot name="m100" xmlns:xacro="http://wiki.ros.org/xacro">
+<robot name="arm" xmlns:xacro="http://wiki.ros.org/xacro">
 
   <xacro:property name="pi" value="3.1415926535897931" />
 
@@ -93,15 +93,15 @@
 
      <joint name="joint1" type="revolute">
        <axis xyz="0 1 0" />
-       <limit effort="1000" lower="-1.57" upper="0" velocity=".5" />
-       <origin rpy="0 1.57 0" xyz="0 0 0" />
+       <limit effort="1000" lower="0" upper="1.57" velocity=".5" />
+       <origin rpy="0 0 0" xyz="0 0 0" />
        <parent link="link_01"/>
        <child link="link_02"/>
      </joint>
      <joint name="joint2" type="revolute">
        <axis xyz="0 1 0" />
        <limit effort="1000" lower="0" upper="1.57" velocity=".5" />
-       <origin rpy="0 -3.14 0" xyz="0 0 0.2" />
+       <origin rpy="0 -1.57 0" xyz="0 0 0.2" />
        <parent link="link_02"/>
        <child link="link_03"/>
      </joint>

@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 
-<robot name="m100" xmlns:xacro="http://wiki.ros.org/xacro">
+<robot name="arm_1" xmlns:xacro="http://wiki.ros.org/xacro">
 
   <xacro:property name="pi" value="3.1415926535897931" />
 
