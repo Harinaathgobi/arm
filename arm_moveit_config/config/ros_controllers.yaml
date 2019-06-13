@@ -22,7 +22,7 @@ arm:
   controller_list:
     []
   arm_controller:
-    type: position_controllers/JointPositionController
+    type: joint_state_controller/JointStateController
     joints:
       - joint0
       - joint1
